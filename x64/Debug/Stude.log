@@ -1,3 +1,2 @@
 ﻿  Lerning.c
-C:\Users\Asus\source\reposis\Stude\Lerning.c(8,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
   Stude.vcxproj -> C:\Users\Asus\source\reposis\Stude\x64\Debug\Stude.exe

@@ -27,3 +27,7 @@ Some info!!!
 You all game! 2
 Your win 0
 Your loss 2
+Some info!!!
+You all game! 1
+Your win 0
+Your loss 1

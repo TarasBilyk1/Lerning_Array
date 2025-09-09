@@ -19,4 +19,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Preview.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

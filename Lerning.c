@@ -29,18 +29,32 @@ int main(void) {
     bool S_return_to_write = false;
     bool S_check = false;
 
+
+    FILE* files;
+    errno_t prev = fopen_s(&files, "Preview.txt", "r");
+
+    if (prev != 0){
+        printf("File not found !");
+        return 1;
+    }
+
+    int character;
+    while ((character = fgetc(files)) != EOF) {
+        printf("%c", character);
+    }
+
     FILE* file;
     errno_t err = fopen_s(&file, "stats.txt", "a");
 
     if (err != 0) {
-        printf("Помилка при відкритті файлу!\n");
+        printf("File not found !\n");
         return 1;
     }
 
     do {
         game++;
 
-        printf("Guess a number from 1 to 100: ");
+        printf("\n\n\nGuess a number from 1 to 100: ");
         fifty_fifty(Array_NUM, 8);
 
         // Тут ввід чисел для вгадування та перевірка на помилку 
